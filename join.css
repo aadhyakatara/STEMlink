@@ -1,0 +1,57 @@
+/* Center the join page content */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #a9a9d6; /* same as front page */
+}
+
+.join-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #1f043b;
+    padding: 0 20px;
+}
+
+.join-page h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.join-page p {
+    font-size: 1.7rem;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.join-page .email a {
+    color: #0b3d91;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-page .email a:hover {
+    text-decoration: underline;
+}
+
+/* Home button styling */
+.home-btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    background-color: #444;
+    color: white;
+    padding: 25px 60px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}

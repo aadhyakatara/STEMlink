@@ -1,0 +1,181 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a9a9d6;
+    color: #1f043b;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* LANDING PAGE */
+.landing-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    height: 100vh;
+}
+
+.landing-left {
+    text-align: left;
+    max-width: 50%;
+    margin-left: 10%;
+}
+
+.landing-left .logo {
+    width: 800px;
+    max-width: 90vw;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.landing-left .founder {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.landing-left .mission {
+    font-size: 3rem;
+}
+
+/* Right side buttons on landing page */
+.landing-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-width: 40%;
+    height: 100%;
+    padding-top: 150px;
+}
+
+.landing-right .btn {
+    display: inline-block;
+    padding: 35px 70px;
+    background: linear-gradient(135deg, #0b3d91, #062b6b);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.3);
+    transition: 0.3s all;
+    margin-bottom: 40px;
+}
+
+.landing-right .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 8px 12px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #062b6b, #0b3d91);
+    cursor: pointer;
+}
+
+/* ARTICLES GRID */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.article-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+    transition: 0.3s transform;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card h3 {
+    margin-bottom: 10px;
+}
+
+.article-card a {
+    color: #0b3d91;
+    text-decoration: none;
+}
+
+.article-card a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO HOME BUTTON (ARTICLES PAGE) */
+.home-btn-articles {
+    display: inline-block;
+    margin: 30px 20px 20px 20px;
+    text-decoration: none;
+    background-color: #444;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn-articles:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .landing-flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .landing-left, .landing-right {
+        max-width: 90%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .landing-left .logo {
+        max-width: 90%;
+    }
+
+    .landing-left .founder {
+        font-size: 2rem;
+    }
+
+    .landing-left .mission {
+        font-size: 2.5rem;
+    }
+
+    .landing-right {
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .landing-right .btn {
+        padding: 25px 50px;
+        font-size: 1.6rem;
+    }
+}
